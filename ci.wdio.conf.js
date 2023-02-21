@@ -1,4 +1,4 @@
-import { config } from "./wdio.conf";
+import { config } from "./wdio.conf.js";
 
 exports.config = {
     ...config,
