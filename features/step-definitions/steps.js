@@ -39,7 +39,7 @@ When(/^I search for (.*)$/, async (query) => {
 });
 
 Then(/^I should see a results for (.*)$/, async (query) => {
-	const output = await $('.//*[@aria-label="Cari"]').getValue();
+	const output = await $('.//*[@class="gLFyf"]').getValue();
 	expect(output).toBe(query);
 	expect(output).toBeDisplayed();
 });
