@@ -1,6 +1,6 @@
 import { config } from "./wdio.conf.js";
 
-exports.config = {
+export const  config = {
     ...config,
     ...{
         
