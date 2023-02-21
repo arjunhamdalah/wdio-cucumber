@@ -57,8 +57,11 @@ export const config = {
 			args: [
 				'--disable-infobars',
 				'--window-size=1366,768',
-				'--use-fake-ui-for-media-stream',
-				'--use-fake-device-for-media-stream',
+				'--headless',
+				'--no-sandbox',
+				'--disable-gpu',
+				'--disable-setuid-sandbox',
+				'--disable-dev-shm-usage',
 			],
         },
         acceptInsecureCerts: true,
