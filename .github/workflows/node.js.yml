@@ -26,8 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    - run: dpkg -i google-chrome-stable_current_amd64.deb || true
-    - run: apt-get -fy install
+    - uses: browser-actions/setup-chrome@v1
+    - run: chrome --version
     - run: npm ci
     - run: npm run wdio
