@@ -53,7 +53,7 @@ export const config = {
         maxInstances: 1,
         browserName: 'chrome',
         'goog:chromeOptions': {
-            binary: '/opt/hostedtoolcache/chromium/latest/x64/chrome',
+            binary: '/opt/hostedtoolcache/chromium/1084008/x64/chrome',
 			args: [
 				'--disable-infobars',
 				'--window-size=1366,768',
