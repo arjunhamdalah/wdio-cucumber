@@ -28,5 +28,6 @@ jobs:
         cache: 'npm'
     - uses: browser-actions/setup-chrome@v1
     - run: chrome --version
+    - run: whcih chrome
     - run: npm ci
     - run: npm run wdio
